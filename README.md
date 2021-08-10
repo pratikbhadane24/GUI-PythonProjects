@@ -1,2 +1,2 @@
 # GUI-PythonProjects
-You'll find all GUI based projects here
+You'll find all sorts of small and moderate level GUI based projects here
