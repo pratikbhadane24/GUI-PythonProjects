@@ -4,6 +4,7 @@ from random import randint
 is_race_on = False
 screen = Screen()
 screen.setup(width=500, height=500)
+
 user_bet = screen.textinput(title="Make your bet", prompt="Which turtle will win the race? Enter a color: ")
 colors = ["red", "orange", "yellow", "green", "blue", "purple"]
 y_positions = [-125, -75, -25, 25, 75, 125]
@@ -21,6 +22,7 @@ if user_bet:
     is_race_on = True
 
 while is_race_on:
+
     for turtle in all_turtles:
         #230 is 250 - half the width of the turtle.
         if turtle.xcor() > 230:
