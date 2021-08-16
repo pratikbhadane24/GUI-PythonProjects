@@ -1,0 +1,1 @@
+This game is of US because I was to lazy to find the coordinates in Turtle gif img for our Indian Map
