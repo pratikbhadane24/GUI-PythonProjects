@@ -25,7 +25,7 @@ game_on = True
 
 while game_on:
     gamescr.update()
-    sleep(0.1)
+    sleep(0.05)
 
     snake.move()
 
@@ -33,18 +33,18 @@ while game_on:
     if snake.head.distance(food) < 15:
         food.newfoodloc()
         snake.snake_extend()
-        scoreboard.increse_score()
+        scoreboard.increase_score()
 
 # When Snake hits the walls
-    if snake.head.xcor() > 285 or snake.head.xcor() < -285 or snake.head.ycor() > 285 or snake.head.ycor()< -285:
-        game_on = False
-        scoreboard.gameover()
+    if snake.head.xcor() > 289 or snake.head.xcor() < -289 or snake.head.ycor() > 289 or snake.head.ycor()< -289:
+        scoreboard.reset()
+        snake.reset()   
 
 # When Snake hits his body
     for segment in snake.segments[1:]:
         if snake.head.distance(segment) < 10:
-            game_on = False
-            scoreboard.gameover()
+            scoreboard.reset()
+            snake.reset()
 
     
 
