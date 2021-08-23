@@ -88,6 +88,7 @@ def find_pass():
 window = Tk()
 window.title("Password Manager")
 window.config(padx=50, pady=50, bg="black")
+window.resizable(0,0)
 
 
 canvas = Canvas(width=200, height=200, bg="black", highlightthickness=0)
